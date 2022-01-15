@@ -6,6 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #3A3A3A;
+    font-size: 15px;
 }
 a {
     font-weight: 500;
@@ -48,6 +49,8 @@ Start Header CSS
 .menu ul {
     display: flex;
     justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 .menu ul li {
     list-style: none;
@@ -59,6 +62,40 @@ Start Header CSS
 }
 /* 
 End Header CSS
+*/
+
+
+/* 
+Start Footer CSS
+*/
+.footer {
+    padding: 45px 0;
+    background: #0A0826;
+    text-align: center;
+    color: #fff;
+}
+.footer-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footer-icon {
+    margin-top: 10px;
+}
+.footer-icon ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-icon ul li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-icon ul li a {
+    padding: 5px 8px;
+    font-size: 18px;
+    color: #fff;
+}
+/* 
+End Footer CSS
 */
 
 
