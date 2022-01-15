@@ -21,6 +21,22 @@ a {
 .single-flex-area {
     flex: 1;
 }
+.section-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+.section-footer {
+    margin-top: 45px;
+    text-align: right;
+}
+.section-footer a {
+    color: #E02C6D;
+    text-decoration: none;
+}
+.section-footer a i {
+    margin-left: 10px;
+}
 
 /* 
 Start Header CSS
@@ -114,7 +130,7 @@ Start Main Contect CSS
     height: auto;
 }
 
-/* partner CSS */
+/* Partner CSS */
 .partner {
     padding: 25px 0;
     border-top: 1px solid #ededed;
@@ -129,11 +145,121 @@ Start Main Contect CSS
     padding: 15px;
 }
 
+/* Popular CSS */
+.popular {
+    padding: 65px 0;
+}
+.popular-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.popular-product {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    cursor: pointer;
+}
+.product-image img {
+    width: 100%;
+}
+.product-details h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+.product-details h4 {
+    font-weight: 400;
+    font-size: 24px;
+}
+.product-rating {
+    margin: 10px 0;
+}
+.product-rating i {
+    color: #FB8200;
+}
+.product-rating span {
+    font-weight: 700;
+}
 
+/* Feature CSS */
+.feature {
+    padding: 45px 0;
+}
+.feature-image {
+    flex: 2;
+}
+.feature-image img {
+    width: 100%;
+}
+.feature-text {
+    flex: 3;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.feature-text h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-text a {
+    display: inline-block;
+    background: #E02C6D;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.feature-text a i {
+    margin-left: 5px;
+}
+
+/* Blog CSS */
+.blog {
+    padding: 45px 0;
+}
+.all-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.blog-post {
+    padding: 18px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+.blog-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+.blog-text h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.blog-text span {
+    display: inline-block;
+    opacity: .8;
+    margin-bottom: 15px;
+}
+.blog-text a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.blog-text a i {
+    margin-left: 10px;
+}
 /* 
 End Main Contect CSS
 */
-
 
 /* 
 Start Footer CSS
@@ -168,27 +294,43 @@ Start Footer CSS
 End Footer CSS
 */
 
-
 /* 
 Start Responsive CSS
 */
+@media screen and (max-width: 1024px) {
+    .popular-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature .flex-area {
+        flex-direction: column;
+    }
+    .feature-image {
+        order: 2;
+    }
+    .feature-text {
+        order: 1;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .feature-text h3 {
+        font-size: 24px;
+    }
+    .all-blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    /*
-    Start Responsive Header CSS
-    */
     .mobile-icon {
         display: block;
     }
     .menu {
         display: none;
     }
-    /*
-    Start Responsive Header CSS
-    */
-
-    /* 
-    Start Responsive Main Contect CSS
-    */
     .hero .flex-area {
         flex-direction: column;
     }
@@ -206,9 +348,13 @@ Start Responsive CSS
     .hero-text h2 {
         font-size: 28px;
     }
-    /* 
-    Start Responsive Main Contect CSS
-    */
+    .popular-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-text h3 {
+        font-size: 18px;
+    }
     
 }
 /* 
